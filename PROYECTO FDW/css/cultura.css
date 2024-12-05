@@ -1,0 +1,41 @@
+/*Proyecto FDW. REVISTA, APARTADO DE CULTURA, MITOLOGÍA GRIEGA */
+
+html {
+	scroll-behavior: smooth;
+}
+
+h4{
+	text-align:center;
+	color: red;
+}
+
+header{
+	border: solid black 5px;
+	height: 20vh;
+}
+
+/*NO FUNCIONA TODAVÍA */
+nav{
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	background-color: #333;
+	border: solid blue 5px;
+}
+
+.opnav {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: #1e8fb7;
+}
+
+main {
+	height:100vh;
+}
