@@ -1,0 +1,96 @@
+@font-face{
+	font-family: "letrasPeriodico";
+    src: url("../css/letras/oldnewspapertypes/OldNewspaperTypes.ttf");
+}
+
+@font-face{
+	font-family: "letrasStarWars";
+    src: url("../css/letras/star_jedi/starjedi/Starjedi.ttf");
+}
+
+@font-face{
+	font-family: "letrasPeli";
+    src: url("../css/letras/movie_gallery/moviegallery.ttf");
+}
+
+body{
+	background-color: #e3ddc5;
+}
+
+header{
+	font-family: letrasPeriodico, sans-serif;
+	font-size: 2.5em;
+	border-bottom: 3px solid black;
+	text-align: center;
+}
+
+/*Mi menu sacado de w3schools.com*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 22.5vw;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #c7920e;
+  color: white;
+}
+
+#fotoCamara{
+	height: 30vh;
+	width: 35vw;
+}
+
+#frase{
+	display: flex;
+	margin-top: 3vh;
+}
+
+#cajaTexto{
+	font-family: letrasStarWars;
+	padding: 1.2em;
+	font-size: 1.8em;
+	color: white;
+	background: black;
+}
+
+.cabecera{
+	height: 5vh;
+	width: 5vw;
+}
+
+#miEncabezado{
+	display: flex;
+}
+
+#logos{
+	font-family: letrasPeli;
+	font-size: 2em;
+	flex-grow: 1;
+}
+
+#titulo{
+	font-size: 3em;
+	font-family: letrasPeriodico, sans-serif;
+	flex-grow: 1;
+}
+
+/*
+wicked
+gladiator 2
+vaina 2
+arcane
+dune the prophecy
+*/
