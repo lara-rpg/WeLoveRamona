@@ -109,7 +109,7 @@ body {
 #boton{
 position: absolute;
             right: 20px; /* Mueve el botón al lado derecho */
-            top: 50px;
+            top: 42px;
 			padding: 10px 20px;
             font-size: 16px;
             color: white;
