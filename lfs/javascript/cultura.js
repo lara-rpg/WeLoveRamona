@@ -13,7 +13,7 @@ function cambio (){
 	cont++;
 	if(cont===7) cont=2;
 
-	document.getElementById('header').style.backgroundImage = "url('inspo/headermenu" + cont + ".jpg')";
+	document.getElementById('header').style.backgroundImage = "url('img/headermenu" + cont + ".jpg')";
 
 }
 
