@@ -22,7 +22,7 @@ header{
 	position: relative;
 	text-align: center;
 	color: white;
-	background-image: url('../img/headermenu2.jpg');
+	background-image: url('../img/headermenu1.jpg');
 	transition: opacity 1s;
 }
 
@@ -203,6 +203,15 @@ footer{
 
 span{
 	color:white;
+}
+
+h3{
+	font-family: GREEK;
+	color:white;
+}
+
+#rrss{
+	cursor: pointer;
 }
 
 

@@ -1,6 +1,6 @@
 //Proyecto FDW. REVISTA, APARTADO DE CULTURA, MITOLOGÍA
 
-var cont=2;
+var cont=1;
 var i=0;
 
 function inicio () {
@@ -11,7 +11,7 @@ function inicio () {
 function cambio (){
 	
 	cont++;
-	if(cont===7) cont=2;
+	if(cont===7) cont=1;
 
 	document.getElementById('header').style.backgroundImage = "url('img/headermenu" + cont + ".jpg')";
 
