@@ -174,7 +174,7 @@ p{
 }
 
 footer{
-	background-color: #202328;
+	
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -182,6 +182,14 @@ footer{
 }
 
 /*TERMINAR CLASES DE NAV Y FOOTERLIGHT*/
+
+.footerdark{
+	background-color: #202328;
+}
+
+.footerlight{
+	background-color: #94adad;
+}
 
 .footerclass{
 	margin: 6vh 2vw;

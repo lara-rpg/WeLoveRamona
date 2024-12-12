@@ -28,12 +28,17 @@ function cambiar_tema(){
 		document.getElementById("intro").className = "introdark"
 		document.getElementById("opgreek").className = document.getElementById("opgreek").className.replace("oplight", "opdark");
 		document.getElementById("opnorse").className = document.getElementById("opnorse").className.replace("oplight", "opdark");
-		//document.getElementsByTagName("footer").className = 
-	}else{
+		document.getElementById("footer").className = "footerdark";
+		document.getElementById("theme").innerHTML = " Dark Mode ";
+		document.getElementById("temaimg").src="img/moon1.png"
+	}else{ //modo light
 		document.body.className = "bodylight"
 		document.getElementById("intro").className = "introlight"
 		document.getElementById("opgreek").className = document.getElementById("opgreek").className.replace("opdark", "oplight");
 		document.getElementById("opnorse").className = document.getElementById("opnorse").className.replace("opdark", "oplight");
+		document.getElementById("footer").className = "footerlight";
+		document.getElementById("theme").innerHTML = " Light Mode ";
+		document.getElementById("temaimg").src="img/sol1.png"
 	}
 }
 
