@@ -10,9 +10,11 @@
 		<link href="css/cultura.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="javascript/cultura.js" defer></script>
 	</head>
-	<body>
-		<header>
-			<div><h4>MYTH</h4></div>
+	<body onload="inicio()" class="bodydark">
+		<header id="header">
+			<!--<img src="inspo/headermenu5.jpg">-->
+			<div id="title"><h4>DESCUBRE MITOLOGÍA</h4></div>
+			
 		</header>
 		<nav>
 			<a href="index.html" class="opnav">Home</a>
@@ -20,7 +22,48 @@
 			<a href="peliSerie.html" class="opnav">Cine</a>
 		</nav>
 		<main>
-			
+			<div id="intro" class="introdark">
+				<h5 class="headintro">DESCUBRE EL MUNDO DE LA MITOLOGÍA</h5>
+				<p class="pdark">Desde los antiguos griegos hasta las culturas indígenas,
+				la mitología ha reflejado los miedos, creencias y vidas de sus civilizaciones.
+				Adéntrate en estas memorables historias, y descubre a sus poderosos dioses y valientes héroes.</p>
+				<h5 class="headintro">LA MITOLOGÍA GRIEGA</h5>
+				<p>La cultura griega es un pilar fundamental de la cultura occidental. Esta civilización surgió el sur 
+				de la península de los Balcanes y se extendió por las islas de los mares Egeo 
+				y Jónico, y su historia abarca desde el siglo IX a.C hasta aproximadamente el I a.C.
+				</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991581.8970458102!2d22.59669918855872!3d38.65991400434286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b4ac711716c63%3A0x363a1775dc9a2d1d!2sGrecia!5e0!3m2!1ses!2ses!4v1733870806203!5m2!1ses!2ses"
+				 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<p>Los mitos griegos constituyen un reflejo de la manera en
+				que los antiguos helenos explicaban el origen del mundo, los fenómenos naturales y las 
+				complejidades de la condición humana. 
+				</p>
+			</div>
+			<div id="menu">
+				<div class="op opdark" id="opgreek">
+					<h6 class="optxt">DESCUBRE MITOLOGÍA GRIEGA </h6>
+					<a href="griega.html" target="_blank"><img src="img/flechaop.png" class="opflecha" onclick="anclaGrecia()"></a>
+				</div>
+					
+				<div class="op opdark" id="opnorse">
+					<h6 class="optxt">DESCUBRE MITOLOGÍA NÓRDICA </h6>
+					<a href="nordica.html" target="_blank"><img src="img/flechaop.png" class="opflecha" onclick="anclaNordica()"></a>
+
+				</div>
+			</div>
 		</main>
+		<footer>
+			<div id="contact" class="footerclass">
+				<span>Contáctanos:</span>
+				<img src="">
+				<img src="">
+				<img src="">
+				<img src="">
+			</div>
+			<div id="cambiar_tema" class="footerclass" onclick="cambiar_tema()">
+				<img id="temaimg" src="img/moon1.png">
+				<span> Dark mode </span> 
+			</div>
+		</footer>
 	</body>
 </html>
