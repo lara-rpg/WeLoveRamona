@@ -31,6 +31,7 @@ function cambiar_tema(){
 		document.getElementById("footer").className = "footerdark";
 		document.getElementById("theme").innerHTML = " Dark Mode ";
 		document.getElementById("temaimg").src="img/moon1.png"
+		document.getElementById("rrss").src="img/rrssdark.png"
 	}else{ //modo light
 		document.body.className = "bodylight"
 		document.getElementById("intro").className = "introlight"
@@ -39,6 +40,7 @@ function cambiar_tema(){
 		document.getElementById("footer").className = "footerlight";
 		document.getElementById("theme").innerHTML = " Light Mode ";
 		document.getElementById("temaimg").src="img/sol1.png"
+		document.getElementById("rrss").src="img/rrsslight.png"
 	}
 }
 

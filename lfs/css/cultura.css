@@ -107,7 +107,7 @@ iframe{
 }
 
 .introlight h5{
-	color:black;
+	color:43484E;
 }
 
 p{
@@ -121,7 +121,7 @@ p{
 }
 
 .introlight p{
-	color:black;
+	color:43484E;
 }
 
 #menu{
@@ -185,10 +185,12 @@ footer{
 
 .footerdark{
 	background-color: #202328;
+	box-shadow: 0px 5px 10px 6px #1b1b1d;
 }
 
 .footerlight{
-	background-color: #94adad;
+	background-color: #bdd9ff;
+	box-shadow: 0px 5px 10px 6px #ccc;
 }
 
 .footerclass{
@@ -205,17 +207,31 @@ footer{
 }
 
 #temaimg{
-	height: 2vh;
-	width: 1vw;
+	height: 2.5vh;
+	width: 1.25vw;
+	margin-right: .5vh;
 }	
 
-span{
+#theme{
+	padding-bottom: 1vh;
+}
+
+.footerdark span{
 	color:white;
 }
 
-h3{
+.footerdark h3{
 	font-family: GREEK;
 	color:white;
+}
+
+.footerlight span{
+	color:black;
+}
+
+.footerlight h3{
+	font-family: GREEK;
+	color:black;
 }
 
 #rrss{
