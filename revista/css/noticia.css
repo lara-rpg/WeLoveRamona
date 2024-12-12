@@ -76,6 +76,10 @@ position: absolute;
             border-radius: 5px;
             cursor: pointer;
 }
+.mid{
+	display:flex;
+	justify-content:center;
+}
 .carousel {
       position: relative;
       width: 80%;
@@ -84,7 +88,6 @@ position: absolute;
       border: 2px solid #ddd;
       border-radius: 8px;
       background-color: #fff;
-	  
 	  
     }
     .carousel-images {
