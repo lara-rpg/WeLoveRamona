@@ -22,7 +22,7 @@ header{
 	position: relative;
 	text-align: center;
 	color: white;
-	background-image: url('../inspo/headermenu2.jpg');
+	background-image: url('../img/headermenu2.jpg');
 	transition: opacity 1s;
 }
 
