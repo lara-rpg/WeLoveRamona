@@ -1,28 +1,21 @@
 @font-face{
 	font-family: "letrasPeriodico";
-    src: url("../css/letras/oldnewspapertypes/OldNewspaperTypes.ttf");
-}
-
-@font-face{
-	font-family: "letrasStarWars";
-    src: url("../css/letras/star_jedi/starjedi/Starjedi.ttf");
-}
-
-@font-face{
-	font-family: "letrasPeli";
-    src: url("../css/letras/movie_gallery/moviegallery.ttf");
+    src: url("../../css/letras/oldnewspapertypes/OldNewspaperTypes.ttf");
 }
 
 body{
 	background-color: #e3ddc5;
+	text-align: center;
 }
 
 header{
 	font-family: letrasPeriodico, sans-serif;
 	border-bottom: 3px solid black;
-	text-align: center;
 	font-size: 1.3em;
+	background-color: #000000;
+    color: #ffffff;
 }
+
 h1{
 	display: inline-block;
 }
@@ -32,133 +25,80 @@ h1{
 	width: 5vw;
 }
 
-/*Mi menu sacado de w3schools.com*/
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #000000;
-  overflow: hidden;
-  display: flex;
+nav.fixedNav {
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    padding: 0.5em 0; /* Espaciado vertical */
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  flex-grow: 1;
+nav.fixedNav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #c7920e;
-  color: white;
+nav .menu-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los enlaces uniformemente */
+    width: 99%; /* Ajusta el ancho del contenedor para que los enlaces estén centrados */
 }
 
-#fotoCamara{
-	height: 30vh;
-	width: 35vw;
-	margin-right: 1vw;
+nav .links {
+    display: flex;
+    justify-content: space-between; /* Reparte enlaces uniformemente */
+    flex: 1; /* Asegura que ocupen todo el espacio disponible */
+    text-align: center;
 }
 
-#frase{
-	display: flex;
-	margin-top: 2vh;
-	align-items: center;
+nav .links a {
+    flex: 1; /* Los enlaces ocupan el mismo espacio */
+    text-align: center; /* Centra el texto */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8em 0; /* Espaciado dentro de los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease;
+	font-size: 1.25em;
 }
 
-#cajaTexto{
-	font-family: letrasStarWars;
-	padding: 2em;
-	font-size: 1.8em;
-	color: white;
-	background: black;
+nav .links a:hover {
+    background-color: #c7920e; /* Fondo al pasar el mouse */
+    color: #ffffff; /* Mantiene el texto blanco */
 }
 
-#miEncabezado{
-	display: flex;
-	align-items:center;
+#contenedorTitulo{
+	text-align: center;
 }
 
 #titulo{
-	font-size: 1.979em;
-	font-family: letrasPeriodico, sans-serif;
-	padding-left: 1.2vw;
-	padding-right: 1.2vw;
-	border: 3px dotted black;
-}
-
-.logos{
-	font-family: letrasPeli;
-	font-size: 1.979em;
+	font-family: "letrasPeriodico";
+	font-size: 3em;
 }
 
 #section{
 	display: flex;
+	justify-content: center;
+	align-content: center;
 	flex-wrap: wrap;
 }
 
-.articulos{
-	margin: 1vw;
-	font-size: 1.3em;
+.contenedores{
+	width: 1100px;
 }
 
-#wicked{
-	width: 46vw;
-	height: 50vh;
+.titulosAnimes{
+	font-size: 2.5em;
+	border: 3px dashed black;
 }
 
-#gladiator{
-	width: 46vw;
-	height: 50vh;
-}
-
-#vaina{
-	width: 18vw;
-	height: 49vh;
-}
-
-#arcane{
-	width: 35vw;
-	height: 42vh;
-}
-
-#dune{
-	width: 35vw;
-	height: 42vh;
-}
-
-#contenedorWicked{
-	width: 46vw;
-	border-right: 3px solid black;
-	padding-right: 3.1vh;
-	text-align: center;
-}
-
-#contenedorGladiator{
-	width: 46vw;
-	text-align: center;
-}
-
-#contenedorVaina{
-	width: 18vw;
-	border-right: 3px solid black;
-	padding-right: 3.2vh;
-	text-align: center;
-}
-
-#contenedorArcane{
-	width: 35vw;
-	border-right: 3px solid black;
-	padding-right: 3.2vh;
-	text-align: center;
-}
-
-#contenedorDune{
-	width: 35vw;
-	text-align: center;
+.descripcionAnime{
+	width: 1100px;
+	font-size: 1.5em;
 }
 
 footer {
@@ -232,6 +172,18 @@ footer th a:visited {
 
 footer th:hover, 
 footer th a:hover {
+    background-color: #222222; /* Fondo más oscuro al pasar */
+    color: #ffffff; /* Texto blanco al pasar */
+}
+
+footer a, 
+footer a:visited {
+    color: #ffffff; /* Enlaces blanco */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Animación suave */
+}
+ 
+footer a:hover {
     background-color: #222222; /* Fondo más oscuro al pasar */
     color: #ffffff; /* Texto blanco al pasar */
 }
