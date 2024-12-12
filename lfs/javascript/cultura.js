@@ -36,3 +36,7 @@ function cambiar_tema(){
 		document.getElementById("opnorse").className = document.getElementById("opnorse").className.replace("opdark", "oplight");
 	}
 }
+
+function socialMedia(){
+	alert("Error. Estas redes sociales todavía no han sido creadas, por favor, inténtalo próximamente.");
+}
