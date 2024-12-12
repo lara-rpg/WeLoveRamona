@@ -1,3 +1,0 @@
-//Proyecto FDW. REVISTA, APARTADO DE CULTURA, MITOLOGÍA GRIEGA 
-
-alert ("Funicona");
