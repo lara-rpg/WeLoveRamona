@@ -1,26 +1,68 @@
 /*Proyecto FDW. REVISTA, APARTADO DE CULTURA, MITOLOGÍA GRIEGA */
 
+@font-face{
+	font-family: "GREEK";
+	src: url("../sfx/greek.ttf");
+}
+
+html, body{
+	margin:0;
+	padding:0;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
-h4{
-	text-align:center;
-	color: red;
-}
-
 header{
-	border: solid black 5px;
-	height: 20vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height: 30vh;
+	position: relative;
+	text-align: center;
+	color: white;
+	background-image: url('../inspo/headermenu2.jpg');
+	transition: opacity 1s;
 }
 
-/*NO FUNCIONA TODAVÍA */
+
+
+#title{
+	position: absolute;
+	color:white;
+	text-shadow: 2px 2px 2px #1b1b1d;
+	text-align:center;
+	font-size:5em;
+	
+}
+
+.bodydark{
+	background-color:#1F2123;
+}
+
+.bodylight{
+	background-color: white;
+}
+
 nav{
 	position: sticky;
 	top: 0;
 	overflow: hidden;
-	background-color: #333;
-	border: solid blue 5px;
+	/*background-color: #34313a;*/
+	background-color:#202328;
+	box-shadow: 0px 2px 5px 3px #1b1b1d;
+}
+
+/*
+div{
+	border: solid yellow 5px;
+}
+*/
+
+iframe{
+	height:30vh;
+	width:20vw;
 }
 
 .opnav {
@@ -30,12 +72,138 @@ nav{
 	text-align: center;
 	padding: 14px;
 	text-decoration: none;
+	font-size: 1.25em;
+	
 }
 
-a:hover{
+.opnav:hover{
 	background-color: #1e8fb7;
 }
 
-main {
-	height:100vh;
+#intro{
+	
+	height:auto;
+	margin: 5vh 15vw;
+	padding: 2vh 5vw;
 }
+
+.introdark{
+	background-color:#2F2F2F;
+	box-shadow: 0px 5px 10px 6px #1b1b1d;
+}
+
+.introlight{
+	background-color: #ebebf2;
+	box-shadow: 0px 5px 10px 6px #ccc;
+}
+
+.headintro{
+	font-family: GREEK;
+	font-size: 2em;
+}
+
+.introdark h5{
+	color:white;
+}
+
+.introlight h5{
+	color:black;
+}
+
+p{
+	text-align: justify;
+	font-family: GREEK;
+	font-size:1.25em;
+}
+
+.introdark p{
+	color:white;
+}
+
+.introlight p{
+	color:black;
+}
+
+#menu{
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding: 1.5vh 6vw;
+	margin-bottom: 3vh;
+}
+
+.op{
+	height: auto;
+	width: 20vw;
+	padding: 3vh 7vw;
+	border-radius: 25px;
+	
+}
+
+.opdark{
+	box-shadow: 0px 5px 10px 6px #1b1b1d;
+}
+
+.oplight{
+	box-shadow: 0px 5px 10px 6px #ccc;
+}
+
+.optxt{
+	font-size: 2em;
+	color:white;
+	text-shadow: 2px 2px 2px #1b1b1d;
+}
+
+.opflecha{
+	height: 10vh;
+	width: 7vw;
+	transition-duration: .5s;
+	transition-timing-function: ease-in-out;
+}
+
+.opflecha:hover{
+	transform: translate(3vw);
+}
+
+#opnorse{
+	background-image: url("../img/norseop.jpg");
+}
+
+#opgreek{
+	background-image: url("../img/greekop.jpg");
+}
+
+footer{
+	background-color: #202328;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*TERMINAR CLASES DE NAV Y FOOTERLIGHT*/
+
+.footerclass{
+	margin: 6vh 2vw;
+}
+
+#contact{
+	display:block;
+}
+
+#cambiar_tema{
+	display:block;
+	cursor: pointer;
+}
+
+#temaimg{
+	height: 2vh;
+	width: 1vw;
+}	
+
+span{
+	color:white;
+}
+
+
+
