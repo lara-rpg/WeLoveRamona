@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaWeb</title>
+
+    <!--Tipografias externas-->
+    <link rel="stylesheet" href="https://use.typekit.net/qqs4eyv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/2d58d215be.js" crossorigin="anonymous"></script>
+
+    <!--Estilos de css-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body>
+    <div class="padre">
+
+        <header class="header" id="inicio">
+            <div class="menu">
+                <nav class="nav">
+                    <a href="#inicio"><i class="fa-solid fa-house-chimney"></i>  Inicio</a>
+                    <a href="#sobre-mi"><i class="fa-solid fa-user"></i>  Sobre mi</a>
+                    <a href="#proyectos"><i class="fa-solid fa-pen-to-square"></i>  Proyectos</a>
+                    <a href="#contacto"><i class="fa-solid fa-envelope"></i>  Contacto</a>
+                </nav>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="texto-principal">
+                <h1>MIGUEL PEÑARANDA</h1>
+                <h3>Artista digital</h3>
+            </div>
+        </header>
+
+
+
+        <section class="section">
+            <div class="sobre-mi" id="sobre-mi">
+                <div class="foto">
+                    <img class="img" src="imagenes/Foto carne.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h2>SOBRE MI</h2>
+                    <p>Apasionado por el diseño. Soy una persona activa, con ganas constantes de aprender, con ambición y empatía. Me gusta trabajar en equipo y colaborar con otras personas para alcanzar objetivos compartidos</p>
+                </div>
+            </div>
+            <div class="proyectos" id="proyectos">
+                <div class="boton-proyectos">
+                </div>
+                <div>
+                    <button class="btn">2D</button>
+                </div>
+                <div class="boton-proyectos">
+                </div>
+                <div>
+                    <button class="btn">3D</button>
+                </div>
+            </div>
+            <div class="contacto" id="contacto">
+                <h2>CONTACTO</h2>                    
+                <div class="card">
+                    <form class="form">
+                    <div class="group">
+                    <input placeholder="" type="text" required="">
+                    <label for="name">Nombre</label>
+                    </div>
+                <div class="group">
+                    <input placeholder="" type="email" id="email" name="email" required="">
+                    <label for="email">Email</label>
+                    </div>
+                <div class="group">
+                    <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
+                    <label for="comment">Comentario</label>
+                </div>
+                    <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+            <nav class="pie"></nav>
+        </footer>
+    </div>
+</body>
+</html>

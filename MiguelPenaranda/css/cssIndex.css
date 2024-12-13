@@ -1,0 +1,358 @@
+/* Estilos Generales */
+html{
+	overflow
+}	
+
+header
+{
+	margin: 0px;
+    padding: 0px;
+	background-color: red;
+	height: 500px;
+}
+
+nav
+{
+	margin: 0px;
+    padding: 0px;
+	background-color: pink;
+}
+
+
+body {
+	font-family: 'Arial', sans-serif;
+    margin: 0px;
+    padding: 0px;
+	background-color: #e5e9ec;
+}
+
+footer
+{
+	margin: 0px;
+    padding: 0px;
+    background-color: #14192c;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2
+{
+	
+}
+
+h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h4
+{
+	
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/* Menú*/
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #14192c;
+    display: flex;
+    justify-content: space-between; /* Espacia elementos a los extremos */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px 50px; /* Espaciado interno */
+}
+
+#menu
+{
+    display: flex;
+    list-style: none; /* Elimina los puntos de lista */
+	border: 0px 20px;
+}
+
+#menu #social a
+{
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Transición para el hover */
+	border: 0px 50px
+}
+
+#menu #social a:hover
+{
+    color: #FFD700; /* Dorado al pasar el ratón */
+}
+
+
+
+/*Header*/
+.header
+{
+	height: 500px;
+	
+}
+
+/*Tarjetas*/
+#main
+{
+	background-color: #14192c;
+
+}
+
+#vlogs
+{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedor
+{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.tarjeta
+{
+    width: 80px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.tarjeta > .fila
+{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tarjeta > .fila > .icono
+{
+    background: #14192c;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.tarjeta > .fila > .descripcion
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0px;
+}
+
+.descripcion h4
+{
+    text-transform: uppercase;
+	margin: 0px;
+	color: #14192c;
+	size: 3em;
+}
+
+.descripcion p
+{
+    color: #14192c;
+    margin: 0px;
+}
+
+input
+{
+    display: none;
+}
+
+input:checked + label
+{
+    width: 600px;
+}
+
+input:checked + label .description
+{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.tarjeta[for="c1"]
+{
+    background-image: url(../media/img/Cine.jpg);
+}
+
+.tarjeta[for="c2"]
+{
+    background-image: url(../media/img/Zapatillas.jpg);
+}
+
+.tarjeta[for="c3"]
+{
+    background-image: url(../media/img/Mitologia1.jpg);
+}
+
+.tarjeta[for="c4"]
+{
+    background-image: url(../media/img/Musica.jpg);
+}
+
+.tarjeta[for="c5"]
+{
+    background-image: url(../media/img/Videojuegos.jpg);
+}
+
+/*Tres en raya*/
+#tresEnRaya
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #e5e9ec;
+}
+
+#tituloTresEnRaya
+{
+	color: #14192c;
+}
+
+#ganaste
+{
+	margin: 0px;
+	font-size: 24px;
+    color: green;
+    margin: 0px;
+    visibility: hidden;
+}
+
+#tablero
+{
+    margin: 20px auto;
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: #14192c;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+	
+#tablero > button
+{
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background: #ffffff;
+	cursor: pointer;
+	transition: background 0.3s, transform 0.2s;
+}
+
+#tablero > button:hover
+{
+	transform: scale(1.1);
+}
+
+#reiniciar
+{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #14192c;
+	margin: 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#reiniciar:hover
+{
+	transform: scale(1.05);
+}
+
+#reiniciar:active
+{
+	transform: scale(0.95);
+	color: #777a81;
+}
+
+#marcador
+{
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 320px;
+    max-width: 100%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	margin: 20px auto 50px auto;
+}
+
+#marcador p
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+
+/*Footer*/
+#footerContent
+{
+	color: #777a81;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#footerInfo
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+}
+
+#footerInfo p
+{
+	margin: 0px;
+}
+
+#footerCopyright
+{
+	font-size: 12px;
+	color: #777a81;
+}

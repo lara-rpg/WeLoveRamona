@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="es" id="html">
+
+	<!-- Head -->
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Estilos -->
+		<link rel="stylesheet" href="MiguelPenaranda/css/cssIndex.css">
+		
+		<!-- Iconos -->
+		<link rel="stylesheet" href="MiguelPenaranda/media/iconos/css/all.css">
+		
+		<!-- Nombre de la página -->
+		<title>Ramona News</title>
+		
+	</head>
+	
+	<!-- Body -->
+	<body>
+		
+		
+		<!-- Menú-->
+		<nav id="navbar" class="nav">
+			<div id="menu">
+				<a href="#inicio"><i class="fab fa-facebook"></i>Inicio</a>
+				<a href="#vlogs"><i class="fa-brands fa-x-twitter"></i>Vlogs</a>
+				<a href="#tresEnRaya"><i class="fa-solid fa-dice-five"></i>Tres en Raya</a>
+			</div>
+			<div id="social">
+				<a href="https://www.instagram.com/u_tad/" target="_blank"><i class="fab fa-facebook"></i> HOLI</a>
+				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				<a href="https://www.instagram.com/u_tad/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+			</div>
+		</nav>
+		
+		<header id="inicio">
+			<h1>Ramona News</h1>
+		</header>
+		
+	
+		<!-- Tarjetas -->
+		<main id="main">
+			<section id="vlogs">
+				<article id="contenedor">
+					
+					<!-- Cine -->
+					<input type="radio" name="slide" id="c1" checked>
+					<label for="c1" class="tarjeta">
+						<div class="fila">
+							<div class="icono">1</div>
+							<div class="descripcion">
+								<h4>Cine</h4>
+								<p>Alonso López</p>
+							</div>
+						</div>
+					</label>
+					
+					<!-- Zapatillas -->
+					<input type="radio" name="slide" id="c2" >
+					<label for="c2" class="tarjeta">
+						<div class="fila">
+							<div class="icono">2</div>
+							<div class="descripcion">
+								<h4>Zapatillas</h4>
+								<p>Lara Alves</p>
+							</div>
+						</div>
+					</label>
+					
+					<!-- Mitología -->
+					<input type="radio" name="slide" id="c3" >
+					<label for="c3" class="tarjeta">
+						<div class="fila">
+							<div class="icono">3</div>
+							<div class="descripcion">
+								<h4>Mitología</h4>
+								<p>Lara Fernández</p>
+							</div>
+						</div>
+					</label>
+					
+					<!-- Música -->
+					<input type="radio" name="slide" id="c4" >
+					<label for="c4" class="tarjeta">
+						<div class="fila">
+							<div class="icono">4</div>
+							<div class="descripcion">
+								<h4>Música</h4>
+								<p>Miguel Cabrera</p>
+							</div>
+						</div>
+					</label>
+					
+					<!-- Videojuegos -->
+					<input type="radio" name="slide" id="c5" >
+					<label for="c5" class="tarjeta">
+						<div class="fila">
+							<div class="icono">5</div>
+							<div class="descripcion">
+								<h4>Videojuegos</h4>
+								<p>Junje Lin</p>
+							</div>
+						</div>
+					</label>
+					
+				</article>
+			</section>
+		
+			<!-- Tres en raya -->
+			<section id="tresEnRaya">
+				<h3 id="tituloTresEnRaya">TRES EN RAYA</h3>
+				<h4 id="ganaste">GANASTE</h4>
+				<article id="tablero">
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+					<button></button>
+				</article>
+				<button id="reiniciar">Reiniciar</button>
+				<article id="marcador">
+					<p>Victorias <span id="victorias">0</span></p>
+					<p>Derrotas <span id="derrotas">0</span></p>
+					<p>Empates <span id="empates">0</span></p>
+				</article>
+			</section>
+		</main>
+		
+		<!-- Enclaces a JavaScript -->
+		<script src="MiguelPenaranda/js/jsIndex.js"></script>
+		<script src="MiguelPenaranda/js/tresEnRaya.js"></script>
+	</body>
+	
+	<!-- Footer -->
+	<footer>
+		<div id="footerContent">
+			<div id="footerInfo">
+				<p><strong>Proyecto:</strong> Ramona News</p>
+				<p><strong>Autor:</strong> We love Ramona</p>
+				<p><strong>Universidad:</strong> U-tad</p>
+				<p><strong>Asignatura:</strong> Desarrollo Web</p>
+			</div>
+			<p id="footerCopyright">© 2024 Derechos Reservados</p>
+		</div>
+	</footer>
+
+</html>
+
+<!--
+	No funciona el scroll-vehabior: smooth;
+	
+	
+	TO DO:
+	- Ajustar imagenes
+	- Hacer header
+	- Hacer nav
+	- Ajustar texto de las tarjetas
+	- Revisar tipografias
+	- Copiar iconos
+	
