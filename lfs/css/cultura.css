@@ -54,11 +54,6 @@ nav{
 	box-shadow: 0px 2px 5px 3px #1b1b1d;
 }
 
-/*
-div{
-	border: solid yellow 5px;
-}
-*/
 
 iframe{
 	height:30vh;
@@ -135,8 +130,9 @@ p{
 .op{
 	height: auto;
 	width: 20vw;
-	padding: 3vh 7vw;
+	padding: 1.5vh 7vw;
 	border-radius: 25px;
+	padding-bottom: 7vh;
 	
 }
 
@@ -149,7 +145,7 @@ p{
 }
 
 .optxt{
-	font-size: 2em;
+	font-size: 2.75em;
 	color:white;
 	text-shadow: 2px 2px 2px #1b1b1d;
 }
@@ -197,6 +193,10 @@ footer{
 	margin: 6vh 2vw;
 }
 
+h3{
+	font-size: 2em;
+}
+
 #contact{
 	display:block;
 }
@@ -212,8 +212,8 @@ footer{
 	margin-right: .5vh;
 }	
 
-#theme{
-	padding-bottom: 1vh;
+span{
+	font-size: 1.2em;
 }
 
 .footerdark span{
@@ -237,6 +237,7 @@ footer{
 #rrss{
 	cursor: pointer;
 }
+
 
 
 
