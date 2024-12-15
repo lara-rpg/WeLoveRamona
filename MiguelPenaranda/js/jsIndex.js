@@ -5,7 +5,7 @@ document.querySelectorAll("input[type='radio']").forEach(radio => {
                 "c1": "MiguelPenaranda/html/piindex.html",
                 "c2": "",
                 "c3": "",
-                "c4": "",
+                "c4": "miguel-cabrera/musica.html",
                 "c5": ""
             };
             window.location.href = urls[radio.id];
