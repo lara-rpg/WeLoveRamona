@@ -1,0 +1,8 @@
+nav{
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	/*background-color: #34313a;*/
+	background-color:#202328;
+	box-shadow: 0px 2px 5px 3px #1b1b1d;
+}
