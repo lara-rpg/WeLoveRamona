@@ -45,5 +45,5 @@ function cambiar_tema(){
 }
 
 function socialMedia(){
-	alert("Error. Estas redes sociales todavía no han sido creadas, por favor, inténtalo próximamente.");
+	alert("Error. Estas redes sociales todavía no han sido creadas. Por favor, inténtalo próximamente.");
 }

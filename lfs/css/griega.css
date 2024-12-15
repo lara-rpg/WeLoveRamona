@@ -1,0 +1,89 @@
+
+@font-face{
+	font-family: "GREEK";
+	src: url("../sfx/greek.ttf");
+}
+
+html, body{
+	margin:0;
+	padding:0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+nav{
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	/*background-color: #34313a;*/
+	background-color:#202328;
+	box-shadow: 0px 2px 5px 3px #1b1b1d;
+}
+
+.opnav {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 1.25em;
+	
+}
+
+#hamburger{
+	height: 3vh;
+	width:auto;
+}
+
+.opnav:hover{
+	background-color: #1e8fb7;
+}
+
+footer{
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #202328;
+	box-shadow: 0px 5px 10px 6px #1b1b1d;
+}
+
+.footerclass{
+	margin: 6vh 2vw;
+}
+
+h3{
+	font-size: 2em;
+	font-family: GREEK;
+	color:white;
+}
+
+#contact{
+	display:block;
+}
+
+#cambiar_tema{
+	display:block;
+	cursor: pointer;
+}
+
+#temaimg{
+	height: 2.5vh;
+	width: 1.12vw;
+	margin-right: .5vh;
+}	
+
+span{
+	font-size: 1.2em;
+	color:white;
+}
+
+#rrss{
+	cursor: pointer;
+	margin-bottom: 3vh;
+}
