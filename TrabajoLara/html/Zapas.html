@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tienda de Zapatillas</title>
+		<link rel="stylesheet" href="../css/Zapas.css" type="text/css">
+		<script src="../js/Zapas.js" type="text/javascript" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Bienvenido a la Tienda de Zapatillas</h1>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#catalogo">Catálogo</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+					<li><a href="#contacto">Encuesta</a></li>
+				</ul>
+			</nav>
+		</header>
+			<div id="sideNav">
+				<nav>
+					<ul>
+						<li><a href="../index.html">INICIO</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="boton" onclick = "abrirMenu()">
+				<img src="../media/menu_icono2.png" id="menu">
+			</div>
+			<div id="carrito">
+				<nav>
+					<ul>
+						<li><p class="item"></p></li>
+						<li><p class="item"></p></li>
+						<li><p class="item"></p></li>
+						<li><p id="total"></p></li>
+						<li><button id="botonPagar" class="zoom-out" onclick="pagar()">Pagar</button></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="botonCarrito" onclick = "abrirCarrito()">
+				<img src="../media/carrito.png" id="menu">
+			</div>
+
+		<section id="inicio">
+			<h2>Tu tienda favorita de zapatillas</h2>
+			<p>Encuentra las mejores zapatillas para cualquier ocasión. Moda, deporte y estilo en un solo lugar.</p>
+	        <ul>
+				<li>Envío gratuito en pedidos superiores a 50€.</li>
+				<li>Descuentos exclusivos para clientes registrados.</li>
+				<li>Más de 1000 modelos de las mejores marcas.</li>
+            </ul>
+		</section>
+		<section id="catalogo">
+			<h2>Catálogo</h2>
+			<div class="zapatillas">
+				<article class="producto" onclick="if (!event.target.closest('button')) { location.href='nike.html'; }">
+					<img src="../media/dunk_low.jpg" alt="Zapatilla nike">
+					<h3>Zapatilla Nike</h3>
+					<p>Precio: 120€</p>
+					<a href="nike.html">Más sobre Nike</a>
+					<button onclick="agregarAlCarrito('Nike Dunk Low', 120)">Añadir al carrito</button>
+				</article>
+				<article class="producto" onclick="location.href='adidas.html'">
+					<img src="../media/campus.png" alt="Zapatilla adidas">
+					<h3>Zapatilla Adidas</h3>
+					<p>Precio: 115€</p>
+					<a href="adidas.html">Más sobre Adidas</a>
+					<button onclick="agregarAlCarrito('Adidas Campus', 115)">Añadir al carrito</button>
+				</article>
+				<article class="producto" onclick="location.href='converse.html'">
+					<img src="../media/chuck_taylor.jpg" alt="Zapatilla converse">
+					<h3>Zapatilla Converse</h3>
+					<p>Precio: 100€</p>
+					<a href="converse.html">Más sobre Converse</a>
+					<button onclick="agregarAlCarrito('Converse Chuck Taylor All Star', 100)">Añadir al carrito</button>
+				</article>
+			</div>
+		</section>
+		<section id="contacto">
+			<h2>Contacto</h2>
+			<form id="formulario-contacto">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+				<label for="correo">Correo Electrónico:</label>
+				<input type="email" id="correo" name="correo" required>
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje" required></textarea>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+		<section id="encuesta">
+			<h2>¿Cuál es tu marca favorita?</h2>
+			<form id="formulario-encuesta">
+				<label><input type="radio" name="marca" value="Nike"> Nike</label>
+				<label><input type="radio" name="marca" value="Adidas"> Adidas</label>
+				<label><input type="radio" name="marca" value="Converse"> Converse</label>
+				<button type="submit">Votar</button>
+			</form>
+			<div id="resultados-encuesta"></div>
+		</section>
+		
+		<section id="reseñas">
+			<h2>Opiniones de Nuestros Clientes</h2>
+			<div id="comentarios">
+				<p><strong>Ana:</strong> ¡Me encantan las Nike Dunk Low, súper cómodas y estilosas!</p>
+				<p><strong>Mario:</strong> El servicio es excelente. Mis Adidas Campus llegaron rápido.</p>
+			</div>
+			<form id="formulario-reseñas">
+				<label for="nombre-reseña">Nombre:</label>
+				<input type="text" id="nombre-reseña" name="nombre-reseña" required>
+				<label for="comentario">Comentario:</label>
+				<textarea id="comentario" name="comentario" required></textarea>
+				<button type="submit">Enviar Reseña</button>
+			</form>
+		</section>
+
+
+		<footer>
+			<p>&copy; 2024 Tienda de Zapatillas. Todos los derechos reservados.</p>
+		</footer>
+</body>
+</html>
