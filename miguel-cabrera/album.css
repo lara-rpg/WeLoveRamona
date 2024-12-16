@@ -5,6 +5,18 @@
     --baby-powder: #FDFEFA;
     --yellow-green: #84CF4C;
 }
+p {
+    font-size: 18px; /* Ajusta el tamaño de la fuente aquí */
+}
+h1 {
+    font-size: 2.5em; /* Tamaño del título principal */
+}
+h2 {
+    font-size: 2em; /* Tamaño de los subtítulos */
+}
+h3 {
+    font-size: 1.5em; /* Tamaño de los subtítulos menores */
+}
 
 .cover-center {
     display: flex;
@@ -91,7 +103,7 @@ nav {
 }
 
 .navbar-box:hover {
-    background-color: var(--steel-pink)
+    background-color: var(--steel-pink);
 }
 
 .box-item {
@@ -108,5 +120,7 @@ a {
     text-decoration: none;
 }
 
-
+a:hover{
+    color: var(--yellow-green);
+}
 
