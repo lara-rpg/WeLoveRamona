@@ -102,3 +102,7 @@ a {
     color:inherit;
     text-decoration: none;
 }
+
+a:hover{
+    color: var(--yellow-green);
+}
