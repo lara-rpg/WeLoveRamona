@@ -1,0 +1,131 @@
+
+@font-face{
+	font-family: "GREEK";
+	src: url("../sfx/greek.ttf");
+}
+
+html, body{
+	margin:0;
+	padding:0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+nav{
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+	background-color:#202328;
+	box-shadow: 0px 2px 5px 3px #1b1b1d;
+	z-index: 2;
+}
+
+#menu_lateral{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	height: 100vh;
+	width:0vw;
+	position:fixed;
+	z-index: 1;
+	overflow-x:hidden;
+	background-color:#202328;
+	box-shadow: none;
+	transition:0.5s;
+	
+}
+
+.opnav {
+	float:left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 1.25em;
+	
+}
+
+.opnav:hover{
+	background-color: #1e8fb7;
+}
+
+.opmenu {
+	
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 1.25em;
+	width: 100%;
+	
+}
+
+.opmenu:hover {
+	background-color: black;
+}
+
+#home{
+	margin-top:2vh;
+}
+
+#hamburger{
+	height: 3vh;
+	width:auto;
+	cursor: pointer;
+}
+
+
+body{
+	background-color:#1F2123;
+}
+
+
+footer{
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #202328;
+	box-shadow: 0px 5px 10px 6px #1b1b1d;
+}
+
+.footerclass{
+	margin: 6vh 2vw;
+}
+
+h3{
+	font-size: 2em;
+	font-family: GREEK;
+	color:white;
+}
+
+#contact{
+	display:block;
+}
+
+#cambiar_tema{
+	display:block;
+	cursor: pointer;
+}
+
+#temaimg{
+	height: 2.5vh;
+	width: 1.12vw;
+	margin-right: .5vh;
+}	
+
+span{
+	font-size: 1.2em;
+	color:white;
+}
+
+#rrss{
+	cursor: pointer;
+	margin-bottom: 3vh;
+}

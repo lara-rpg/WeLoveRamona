@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Revista Game</title>
+		<link rel="stylesheet" href="../css/juegos.css">	
+		<script type= "text/javascript" src="../js/juegos.js" defer></script>	
+</head>
+<body>
+
+<header class="header">
+	<hr>
+        <h1>GameZone</h1>
+		<img src="../img/mario.png" alt="Logo">
+	<hr>
+
+<nav class="menu">
+            <ul class="nav-links">
+				<li><a href="../../index.html">Home</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+				<li><a href="#recomendacion">Recomendación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>		
+ </nav>
+ </header>
+ 
+<button id="boton" onclick="location.href='info.html'">Información</button>
+    <section id="noticias" class="seccion">
+        <h2>Últimas Noticias</h2>
+		
+        <div class="noticia">
+            <h3>Polemica The Game Awards 2024</h3>
+            <p>Polemica con la nominacion del DLC de Elden Ring: Shadow of the Erdtree y el juego de carta de Balatro.</p>
+			<a href="game4.html"><img src="../img/elden.jpg" width="300" height="200"></a>	
+			<a href="balatro.html"><img src="../img/balatro.jpg" width="300" height="200"></a>
+        </div>
+        <div class="noticia">
+            <h3>¿Qué sale antes GTA VI o tercera guerra mundial?</h3>
+            <p>GTA VI realmente no existe solo es una mentira.</p>
+			<a href="game2.html"><img src="../img/gta.jpg" width="300" height="200"></a>
+        </div>
+		<div class="noticia">
+            <h3>¿Genialidad o estafa?</h3>
+            <p>¿Realmente merece la pena el PlayStation 5 pro?</p>
+			<img src="../img/play.png" width="300" height="200">
+        </div>
+		<button class="botones" onclick="location.href='noticia.html'">Saber Mas</button>
+    </section>
+    <section id="reseñas" class="seccion">
+	
+        <h2>Reseñas de Juegos</h2>
+        <div class="reseña">
+            <h3>Dark Soul 3 - ★★★★★</h3>
+            <p>El mejor Souls de todos</p>
+        </div>
+        <div class="reseña">
+            <h3>FIFA 25 - ★★☆☆☆</h3>
+            <p>Cada año es lo mismo pero con mas bug y menos equilibrado</p>
+        </div>
+		<div class="reseña">
+            <h3>A way out - ★★★★☆</h3>
+            <p>El juego está bien, necesita una final mejor</p>
+        </div>
+		<div class="reseña">
+            <h3>Baldur Gate 3 - ★★★★★</h3>
+            <p>Demasido bueno, si merecía el goty.</p>
+        </div>
+		<div class="reseña">
+            <h3>Fortnite - ★★★★☆</h3>
+            <p>Agustin51.</p>
+        </div>
+		<button class="botones" onclick="location.href='reseña.html'">Saber Mas</button>
+    </section>
+	<section id="recomendacion" class="seccion">
+	
+        <h2>Recomendación de juegos</h2>
+        <div class="noticia">
+            <h3>Black Myth: Wukong</h3>
+            <p>
+			Black Myth: Wukong es un videojuego de rol de acción, desarrollado y distribuido por Game Science. Está basado en la clásica novela china del siglo XVI Viaje al Oeste, siguiendo las aventuras del mono Sun Wukong.
+			</p>
+			<img src="../img/wukong.jpg" width="300" height="200">
+			
+        </div>
+        <div class="recomendacion">
+            <h3>Final Fantasy </h3>
+            <p>
+			Final Fantasy VII es un videojuego de rol desarrollado y publicado por la empresa Square para la plataforma PlayStation</p>
+			<img src="../img/fantasy.jpeg" width="300" height="200">
+        </div>
+		<div class="recomendacion">
+            <h3>Sparking Zero</h3>
+            <p>
+			DRAGON BALL: Sparking! ZERO lleva a un nuevo nivel el legendario estilo de juego de la serie Budokai Tenkaichi. ¡Domina el poder destructivo de los luchadores más fuertes que han aparecido en Dragon Ball!
+			</p>
+			<a href="game3.html"><img src="../img/dragonball.jpg" width="300" height="200"></a>
+        </div>
+		<button class="botones" onclick="location.href='recomendacion.html'">Saber Mas</button>
+    </section>
+    <footer id="contacto" class="footer">
+        <h2>Contáctanos</h2>
+        <form id="contactForm">
+            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+            <input type="email" id="email" placeholder="Tu Email" required>
+            <textarea id="mensaje" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>© 2024 GameZone. Todos los derechos reservados para extorsionar.</p>
+    </footer>
+</body>
+</html>
