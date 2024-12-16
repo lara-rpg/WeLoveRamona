@@ -27,9 +27,9 @@ nav{
 	display:flex;
 	flex-direction:column;
 	align-items: center;
-	height: 100vh;
+	height: 155vh;
 	width:0vw;
-	position:fixed;
+	position:absolute;
 	z-index: 1;
 	overflow-x:hidden;
 	background-color:#202328;
@@ -84,6 +84,103 @@ body{
 	background-color:#1F2123;
 }
 
+header{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height: 30vh;
+	position: relative;
+	text-align: center;
+	color: white;
+	background-image: url('../img/headermenu3.jpg');
+	transition: opacity 1s;
+}
+
+
+
+#title{
+	position: absolute;
+	color:white;
+	text-shadow: 2px 2px 2px #1b1b1d;
+	text-align:center;
+	font-size:5em;
+	
+}
+
+#titulo_mapa{
+	font-family: GREEK;
+	font-size: 3em;
+	color:white;
+	text-align: center;
+	
+}
+
+#map{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	background-color:black;
+	height:90vh;
+	width: 50vw;
+	margin: 1.5vh 25vw 10vh;
+	padding: 3vh 1vw;
+	border-radius:25px;
+	
+}
+
+.extremo{
+	display:flex;
+	justify-content: center;
+}
+
+.medio{
+	display:flex;
+	justify-content: space-between;
+}
+
+.realms{
+	border-radius:50%;
+	width: 10vw;
+	height:auto;
+	margin: 1.5vh 1.25vw;
+	padding: .5vh .25vw;;
+
+}
+
+#asgard{
+	margin-top: -1vh;
+	margin-bottom: 1vh;
+	padding-bottom:2vh;
+}
+
+#helheim{
+	margin-top: 1vh;
+	margin-bottom: -1vh;
+	padding-top:2vh;
+}
+
+#titulo_vista{
+	font-family: GREEK;
+	font-size: 3em;
+	color:white;
+	text-align: center;
+	
+}
+
+#img_vista{
+	width: 50vw;
+
+}
+
+#vista{
+	width: 50vw;
+	margin: 1.5vh 25vw 10vh;
+}
+/*Esta clase está para mantener oculta esta parte hasta que se haga click en el mapa
+es lo primero que quita javascript*/
+.hidden{
+	display:none;
+}
 
 footer{
 	

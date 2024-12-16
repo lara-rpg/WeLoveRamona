@@ -11,13 +11,14 @@
 		<script type="text/javascript" src="../javascript/nordica.js" defer></script>
 	</head>
 	<body>
+		<header id="header">
+			<div id="title"><h4>VIAJA POR LOS 9 REINOS</h4></div>
+			
+		</header>
 		<nav>
 			<img src="../img/hamburger2.png" alt="hamburger" id="hamburger" class="opnav" onclick="menu()">
-			<a href="../../index.html" class="opnav">Home</a>
-			<a href="../../Jun/html/juegos.html" class="opnav">Juegos</a>
-			<a href="../../alonso/html/peliSerie.html" class="opnav">Televisión</a>
-			<a href="../../index.html" class="opnav">Home</a>
-			<a href="../../index.html" class="opnav">Home</a>
+			<a href="#titulo_mapa" class="opnav">Inicio</a>
+			<a href="#titulo_vista" class="opnav">Vista</a>
 		</nav>
 		<div id="menu_lateral">
 			<a href="../../index.html" class="opmenu" id="home">Home</a>
@@ -29,7 +30,29 @@
 		</div>
 		
 		<main>
-			<div id="glosario">
+			<h5 id="titulo_mapa" >ELIGE UNO DE LOS 9 REINOS:</h5>
+			<section id="map">
+				<div class="extremo">
+					<a href="#titulo_vista" onclick="vista(1)"><img src="../img/alfheim.png" class="realms"></a>
+					<a href="#titulo_vista" onclick="vista(2)"><img src="../img/asgard.png" class="realms" id="asgard"></a>
+					<a href="#titulo_vista" onclick="vista(3)"><img src="../img/jotunheim.png" class="realms"></a>
+				</div>
+				<div class="medio">
+					<a href="#titulo_vista" onclick="vista(4)"><img src="../img/vanaheim.png" class="realms"></a>
+					<a href="#titulo_vista" onclick="vista(5)"><img src="../img/midgard.png" class="realms"></a>
+					<a href="#titulo_vista" onclick="vista(6)"><img src="../img/svarta.png" class="realms"></a>
+				</div>
+				<div class="extremo">
+					<a href="#titulo_vista" onclick="vista(7)"><img src="../img/niflheim.png" class="realms"></a>
+					<a href="#titulo_vista" onclick="vista(8)"><img src="../img/helheim.png" class="realms" id="helheim"></a>
+					<a href="#titulo_vista" onclick="vista(9)"><img src="../img/muspelheim.png" class="realms"></a>
+				</div>
+			
+			</section>
+			<section id="vista" class="hidden">
+			<h5 id="titulo_vista" ></h5>
+			<img src="../img/vista1.jpg" id="img_vista">				
+			</section>
 		</main>
 		
 		<footer id="footer" class="footerdark">
