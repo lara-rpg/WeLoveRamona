@@ -1,62 +1,75 @@
 /* Estilos Generales */
-html{
-	overflow
+@font-face
+{
+	font-family: letrasPeriodico;
+	src: url("MiguelPenaranda/media/img/OldNewspaperTypes.ttf");
+}
+
+html
+{
+	scroll-behavior: smooth;
+	width: 100%;
 }	
 
 header
 {
-	margin: 0px;
-    padding: 0px;
-	background-color: red;
-	height: 500px;
+	font-family: letrasPeriodico;
+	padding: 300px 0px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 nav
 {
-	margin: 0px;
-    padding: 0px;
-	background-color: pink;
+	background-color: #14192c;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+	padding: 20px 0px;
+	display: flex;
+	justify-content: space-around;
 }
 
-
-body {
-	font-family: 'Arial', sans-serif;
-    margin: 0px;
-    padding: 0px;
+body
+{
+	font-family: Arial, sans-serif;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 	background-color: #e5e9ec;
+}
+
+main
+{
+	background-color: #14192c;
 }
 
 footer
 {
 	margin: 0px;
-    padding: 0px;
-    background-color: #14192c;
-    padding: 20px;
-    font-size: 14px;
-    text-align: center;
+	padding: 0px;
+	background-color: #14192c;
+	padding: 20px;
+	font-size: 14px;
+	text-align: center;
 }
 
-h1 {
-    font-size: 36px;
-    color: #007BFF;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-}
-
-h2
+h1
 {
-	
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 100px;
+	color: black;
 }
 
-h3 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-h4
+h3
 {
-	
+	font-size: 28px;
+	color: #333;
+	margin-bottom: 10px;
 }
 
 a
@@ -64,55 +77,28 @@ a
 	text-decoration: none;
 }
 
+/* Header */
+.cabecera
+{
+	height: 100px;
+	width: 100px;
+}
+
 /* Menú*/
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #14192c;
-    display: flex;
-    justify-content: space-between; /* Espacia elementos a los extremos */
-    align-items: center; /* Centra verticalmente */
-    padding: 20px 50px; /* Espaciado interno */
+.botonNav a
+{
+	color: white;
+	font-size: 18px;
+	transition: color 0.3s ease;
+	padding: 0px 10px;
 }
 
-#menu
+.botonNav a:hover
 {
-    display: flex;
-    list-style: none; /* Elimina los puntos de lista */
-	border: 0px 20px;
-}
-
-#menu #social a
-{
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease; /* Transición para el hover */
-	border: 0px 50px
-}
-
-#menu #social a:hover
-{
-    color: #FFD700; /* Dorado al pasar el ratón */
-}
-
-
-
-/*Header*/
-.header
-{
-	height: 500px;
-	
+    color: #777a81;
 }
 
 /*Tarjetas*/
-#main
-{
-	background-color: #14192c;
-
-}
-
 #vlogs
 {
     width: 100%;
@@ -141,7 +127,6 @@ a
     display: flex;
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
 .tarjeta > .fila
@@ -216,7 +201,7 @@ input:checked + label .description
 
 .tarjeta[for="c3"]
 {
-    background-image: url(../media/img/Mitologia1.jpg);
+    background-image: url(../media/img/Mitologia.jpg);
 }
 
 .tarjeta[for="c4"]
@@ -355,4 +340,180 @@ input:checked + label .description
 {
 	font-size: 12px;
 	color: #777a81;
+}
+
+/* Responsidad */
+@media(max-width: 1024px)
+{
+	header
+	{
+		margin-top: 60px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+    }
+	
+	h1
+	{
+        font-size: 80px;
+        text-align: center;
+    }
+	
+    .cabecera
+	{
+        height: 10vh;
+        width: auto;
+    }
+	
+    #vlogs
+	{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #contenedor
+	{
+        height: auto;
+        align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding: 10px;
+    }
+
+    .tarjeta
+	{
+        width: 100%;
+		height: 80px;
+		margin: 10px 0;
+		transition: height 0.6s ease;
+		background-size: cover;
+    }
+	
+    input:checked + label
+	{
+        width: 100%;
+		height: 400px;
+    }
+}
+
+@media(max-width: 770px)
+{
+	header
+	{
+		margin-top: 60px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+    }
+	
+	h1
+	{
+        font-size: 80px;
+        text-align: center;
+    }
+	
+	#menu
+	{
+        display: none;
+    }
+	
+    .cabecera
+	{
+        height: 10vh;
+        width: auto;
+    }
+	
+    #vlogs
+	{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #contenedor
+	{
+        height: auto;
+        align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding: 10px;
+    }
+
+    .tarjeta
+	{
+        width: 100%;
+		height: 80px;
+		margin: 10px 0;
+		transition: height 0.6s ease;
+		background-size: cover;
+    }
+	
+    input:checked + label
+	{
+        width: 100%;
+		height: 400px;
+    }
+}
+
+@media(max-width: 660px)
+{
+    header
+	{
+		margin-top: 60px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+    }
+	
+	h1
+	{
+        font-size: 80px;
+        text-align: center;
+    }
+	
+	#menu
+	{
+        display: none;
+    }
+
+    .cabecera
+	{
+        height: 10vh;
+        width: auto;
+    }
+	
+    #vlogs
+	{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #contenedor
+	{
+        height: auto;
+        align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding: 10px;
+    }
+
+    .tarjeta
+	{
+        width: 100%;
+		height: 80px;
+		margin: 10px 0;
+		transition: height 0.6s ease;
+		background-size: cover;
+    }
+	
+    input:checked + label
+	{
+        width: 100%;
+		height: 400px;
+    }
 }

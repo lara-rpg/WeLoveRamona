@@ -21,3 +21,12 @@ function menu(){
 function socialMedia(){
 	alert("Error. Estas redes sociales todavía no han sido creadas. Por favor, inténtalo próximamente.");
 }
+
+function girarADetras(card){
+	card.querySelector('.flip').style.transform = 'rotateY(180deg)';
+	
+}
+
+function girarADelante(card){
+	card.querySelector('.flip').style.transform = 'rotateY(0deg)';
+}

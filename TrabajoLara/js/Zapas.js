@@ -1,17 +1,18 @@
 var contadorItems = 0;
 var precioTotal = 0;
+var subpaginas = ["nike.html", "adidas.html", "converse.html"];
 
 document.getElementById("formulario-encuesta").addEventListener("submit", function (event) {
     event.preventDefault();
-    const seleccion = document.querySelector('input[name="marca"]:checked').value;
+    var seleccion = document.querySelector('input[name="marca"]:checked').value;
     document.getElementById("resultados-encuesta").textContent = `Gracias por votar. Tu marca favorita es ${seleccion}.`;
 });
 
 document.getElementById("formulario-reseñas").addEventListener("submit", function (event) {
     event.preventDefault();
-    const nombre = document.getElementById("nombre-reseña").value;
-    const comentario = document.getElementById("comentario").value;
-    const nuevoComentario = `<p><strong>${nombre}:</strong> ${comentario}</p>`;
+    var nombre = document.getElementById("nombre-reseña").value;
+    var comentario = document.getElementById("comentario").value;
+    var nuevoComentario = `<p><strong>${nombre}:</strong> ${comentario}</p>`;
     document.getElementById("comentarios").innerHTML += nuevoComentario;
     document.getElementById("formulario-reseñas").reset();
 });
@@ -34,6 +35,7 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
 		// Mostrar mensaje de éxito
 		alert("Gracias por contactarnos, " + nombre + ". Hemos recibido tu mensaje.");
 	}
+	document.getElementById("formulario-contacto").reset();
 });
 
 // Función para validar email
@@ -92,3 +94,6 @@ function pagar(){
 	precioTotal = 0;
 }
 
+function cambiarPagina(n){
+	location.href = subpaginas[n];
+}
