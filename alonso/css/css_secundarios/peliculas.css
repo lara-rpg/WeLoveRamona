@@ -25,6 +25,13 @@ h1{
 	width: 5vw;
 }
 
+h1 a, 
+h1 a:visited {
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
 nav.fixedNav {
     position: relative;
     width: 100%;
@@ -32,8 +39,8 @@ nav.fixedNav {
     color: #ffffff;
     z-index: 1000;
     display: flex;
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    padding: 0.5em 0; /* Espaciado vertical */
+    justify-content: center; 
+    padding: 0.5em 0; 
 }
 
 nav.fixedNav.fixed {
@@ -44,31 +51,31 @@ nav.fixedNav.fixed {
 
 nav .menu-container {
     display: flex;
-    justify-content: space-between; /* Espacia los enlaces uniformemente */
-    width: 99%; /* Ajusta el ancho del contenedor para que los enlaces estén centrados */
+    justify-content: space-between; 
+    width: 99%; 
 }
 
 nav .links {
     display: flex;
-    justify-content: space-between; /* Reparte enlaces uniformemente */
-    flex: 1; /* Asegura que ocupen todo el espacio disponible */
+    justify-content: space-between;
+    flex-grow: 1; 
     text-align: center;
 }
 
 nav .links a {
-    flex: 1; /* Los enlaces ocupan el mismo espacio */
-    text-align: center; /* Centra el texto */
+    flex-grow: 1; 
+    text-align: center; 
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.8em 0; /* Espaciado dentro de los enlaces */
+    padding: 0.8em 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 	font-size: 1.25em;
 }
 
 nav .links a:hover {
-    background-color: #c7920e; /* Fondo al pasar el mouse */
-    color: #ffffff; /* Mantiene el texto blanco */
+    background-color: #c7920e;
+    color: #ffffff;
 }
 
 #contenedorTitulo{
@@ -114,88 +121,92 @@ nav .links a:hover {
 }
 
 footer {
-    background-color: #000000; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
-    padding: 5vh 3vw; /* Espaciado interno */
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 5vh 3vw; 
     font-family: Arial, sans-serif;
-    font-size: 1em; /* Tamaño base del texto */
+    font-size: 1em;
     text-align: center;
 }
 
 footer h3 {
-    font-size: 1.8em; /* Título más destacado */
+    font-size: 1.8em; 
     font-weight: bold;
     margin-bottom: 2vh;
 }
 
 footer table {
-    margin: 0 auto; /* Centrar tabla */
-    border-collapse: collapse; /* Unir bordes */
-    width: 81vw; /* Ancho ajustable */
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    width: 81vw; 
 }
 
 footer th {
-    font-size: 1.2em; /* Tamaño relativo */
+    font-size: 1.2em; 
     font-weight: bold;
     padding: 1vh 0.5vw;
-    text-align: center; /* Centrar texto */
-    color: #ffffff; /* Blanco puro */
-    border-bottom: 0.2vh solid #555555; /* Línea inferior gris */
+    text-align: center; 
+    color: #ffffff; 
+    border-bottom: 0.2vh solid #555555; 
 	width: 27vw;
 }
 
 footer th:hover, 
 footer th a:hover {
-     background-color: #222222; /* Fondo más oscuro al pasar */
-    color: #ffffff; /* Texto blanco al pasar */
+     background-color: #222222; 
+    color: #ffffff; 
 }
 
 footer td {
     font-size: 1em;
     padding: 1vh 0.5vw;
-    text-align: center; /* Centrar texto */
-    color: #ccc; /* Texto gris claro */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Animación */
+    text-align: center; 
+    color: #ccc; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 	width: 27vw;
 }
 
 footer td a {
-    color: #ccc; /* Enlaces gris claro */
+    color: #ccc; 
     text-decoration: none;
-    transition: color 0.3s ease; /* Animación */
+    transition: color 0.3s ease; 
 }
 
 footer td:hover, 
 footer td a:hover {
-    background-color: #222222; /* Fondo más oscuro al pasar */
-    color: #ffffff; /* Texto blanco al pasar */
+    background-color: #222222; 
+    color: #ffffff; 
 }
 
 footer td:empty {
-    display: none; /* Oculta celdas vacías */
+    display: none; 
 }
 
 footer th a, 
 footer th a:visited {
-    color: #ffffff; /* Enlaces blanco */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s ease; /* Animación suave */
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
 }
 
 footer th:hover, 
 footer th a:hover {
-    background-color: #222222; /* Fondo más oscuro al pasar */
-    color: #ffffff; /* Texto blanco al pasar */
+    background-color: #222222; 
+    color: #ffffff; 
 }
 
 footer a, 
 footer a:visited {
-    color: #ffffff; /* Enlaces blanco */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s ease; /* Animación suave */
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
  
 footer a:hover {
-    background-color: #222222; /* Fondo más oscuro al pasar */
-    color: #ffffff; /* Texto blanco al pasar */
+    background-color: #222222; 
+    color: #ffffff; 
+}
+
+#socialMedia{
+	cursor: pointer;
 }

@@ -5,11 +5,12 @@
 		<title>Cuestionario de Series</title>
 		<link rel="stylesheet" href="../../../css/css_secundarios/css_terciarios/cuestionarioSeries.css">
 		<script type= "text/javascript" src="../../../js/js_secundarios/js_terciarios/cuestionarioSeries.js" defer></script>
+		<link rel="shortcut icon" href="../../../media/img/camara2.png" >
 	</head>
-	<body onload="inicio()">
+	<body>
 		<header>
 			<img class="cabecera" src="../../../media/img/cabecera1.png">
-			<h1>Ramona News</h1>
+			<h1><a href="../../../../index.html">Ramona News</a></h1>
 			<img class="cabecera" src="../../../media/img/cabecera2.png">
 		</header>
 		<nav class="fixedNav">
@@ -23,10 +24,246 @@
 			</div>
 		</nav>
 		<div id="contenedorTitulo"><h1 id="titulo">Cuestionario de Series</h1></div>
+		<div id="section">
+			<form>
+				<div class="cuestion">
+					<p>¿En qué año se emitió por primera vez la serie "Friends"?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/friends.png">
+					<div class="tipoTest">
+						<input type="checkbox" id="friendsCorrecto"><p class="opcion">1994</p>
+						<input type="checkbox" id="friendsFalso1"><p class="opcion">1999</p>
+						<input type="checkbox" id="friendsFalso2"><p class="opcion">1984</p>
+						<input type="checkbox" id="friendsFalso3"><p class="opcion">1992</p>
+					</div>
+				</div>
+				<div class="cuestion">
+					<p>¿En qué academia se desarrolla gran parte de la trama de "Wednesday"?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/wednesday.png">
+					<select class="cuestionInputs" id="wednesday">
+						<option value="0">
+							Starfleet Academy
+						</option>
+						<option value="0">
+							Hogwarts
+						</option>
+						<option value="0">
+							Brakebills
+						</option>
+						<option value="1">
+							Nevermore Academy
+						</option>
+					</select>
+				</div>
+				<div class="cuestion">
+					<p>¿Cómo se llama el personaje interpretado por Álvaro Morte en "La Casa de Papel"?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/laCasaDePapel.png">
+					<input type="text" class="cuestionInputs" id="laCasaDePapel">
+				</div>
+				<div class="cuestion">
+					<p>¿Quién es el autor de las novelas en las que se basa "Juego de Tronos"?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/juegoDeTronos.png">
+					<select class="cuestionInputs" id="juegoDeTronos">
+						<option value="0">
+							J.R.R. Tolkien
+						</option>
+						<option value="1">
+							George R.R. Martin
+						</option>
+						<option value="0">
+							J.K. Rowling
+						</option>
+						<option value="0">
+							Stephen King
+						</option>
+					</select>
+				</div>
+				<div class="cuestion">
+					<p>¿Cómo se llama la escuela de "Élite"?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/elite.png">
+					<input type="text" class="cuestionInputs" id="elite">
+				</div>
+				<div class="cuestion">
+					<p>¿Cuál es el apellido del personaje Simon, interés amoroso de Daphne Bridgerton en "Bridgerton"?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/bridgerton.png">
+					<select class="cuestionInputs" id="bridgerton">
+						<option value="1">
+							Hastings
+						</option>
+						<option value="0">
+							Featherington
+						</option>
+						<option value="0">
+							Cowper
+						</option>
+						<option value="0">
+							Granville
+						</option>
+					</select>
+				</div>
+				<div class="cuestion">
+					<p>¿En qué serie aparece el personaje Lorelai Gilmore?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/lorelai_gilmore.png">
+					<input type="text" class="cuestionInputs" id="lorelai_gilmore">
+				</div>
+				<div class="cuestion">
+					<p>¿En qué año se estrenó la serie "Stranger Things"?</p>
+					<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/strangerThings.png">
+					<div class="tipoTest">
+						<input type="checkbox" id="strangerThingsFalsa1"><p class="opcion">2015</p>
+						<input type="checkbox" id="strangerThingsCorrecta"><p class="opcion">2016</p>
+						<input type="checkbox" id="strangerThingsFalsa2"><p class="opcion">2017</p>
+						<input type="checkbox" id="strangerThingsFalsa3"><p class="opcion">2018</p>
+					</div>
+				</div>
+			<div class="cuestion">
+				<p>¿Cuál es el nombre del personaje principal de "The Mandalorian"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/mandalorian.png">
+				<input type="text" class="cuestionInputs" id="mandalorian">
+			</div>
+			<div class="cuestion">
+				<p>¿Qué actriz interpreta a "Carrie Bradshaw" en "Sexo en Nueva York"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/sexoEnNuevaYork.png">
+				<select class="cuestionInputs" id="sexoEnNuevaYork">
+					<option value="0">
+						Kim Cattrall
+					</option>
+					<option value="0">
+						Cynthia Nixon
+					</option>
+					<option value="1">
+						Sarah Jessica Parker
+					</option>
+					<option value="0">
+						Kristin Davis
+					</option>
+				</select>
+			</div>
+			<div class="cuestion">
+				<p>¿Cómo se llama el personaje principal de "The Witcher"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/theWitcher.png">
+				<input type="text" class="cuestionInputs" id="theWitcher">
+			</div>
+			<div class="cuestion">
+				<p>En "El juego del calamar", ¿qué forma de galleta dalgona debe cortar correctamente el personaje principal en el segundo juego?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/elJuegoDelCalamar.png">
+				<select class="cuestionInputs" id="elJuegoDelCalamar">
+					<option value="0">
+						Estrella
+					</option>
+					<option value="0">
+						Triángulo
+					</option>
+					<option value="0">
+						Círculo
+					</option>
+					<option value="1">
+						Paraguas
+					</option>
+				</select>
+			</div>
+			<div class="cuestion">
+				<p>¿Cómo se llama el personaje principal de "House"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/doctorHouse.png">
+				<input type="text" class="cuestionInputs" id="doctorHouse">
+			</div>
+			<div class="cuestion">
+				<p>¿Qué serie sigue la vida de un grupo de estudiantes de Moordale Secondary School y sus dramas relacionados con la sexualidad?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/sexEducation.png">
+				<select class="cuestionInputs" id="sexEducation">
+					<option value="0">
+						Euphoria
+					</option>
+					<option value="0">
+						Riverdale
+					</option>
+					<option value="1">
+						Sex Education
+					</option>
+					<option value="0">
+						The Society
+					</option>
+				</select>
+			</div>
+			<div class="cuestion">
+				<p>¿Cuál es el nombre del protagonista de "The Crown"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/theCrown.png">
+				<input type="text" class="cuestionInputs" id="theCrown">
+			</div>
+			<div class="cuestion">
+				<p>¿Qué serie narra la vida de un grupo de amigos que viven en Nueva York y se reúnen en un bar llamado "MacLaren's"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/comoConociAVuestraMadre.png">
+				<select class="cuestionInputs" id="comoConociAVuestraMadre">
+					<option value="0">
+						Friends
+					</option>
+					<option value="0">
+						Gossip Girl
+					</option>
+					<option value="1">
+						How I Met Your Mother
+					</option>
+					<option value="0">
+						The Big Bang Theory
+					</option>
+				</select>
+			</div>
+			<div class="cuestion">
+				<p>¿Cómo se llama el líder de la banda criminal en "Peaky Blinders"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/peakyBlinders.png">
+				<input type="text" class="cuestionInputs" id="peakyBlinders">
+			</div>
+			<div class="cuestion">
+				<p>¿En qué serie aparece el personaje "Daryl Dixon"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/theWalkingDead.png">
+				<select class="cuestionInputs" id="theWalkingDead">
+					<option value="1">
+						The Walking Dead
+					</option>
+					<option value="0">
+						Supernatural
+					</option>
+					<option value="0">
+						The Vampire Diaries
+					</option>
+					<option value="0">
+						The Originals
+					</option>
+				</select>
+			</div>
+			<div class="cuestion">
+				<p>¿Qué serie sigue la vida de los empleados de una oficina de ventas de papel en Scranton, Pensilvania?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/theOffice.png">
+				<input type="text" class="cuestionInputs" id="theOffice">
+			</div>
+			<div class="cuestion">
+				<p>¿Cuál es el nombre del personaje interpretado por James Gandolfini en "Los Soprano"?</p>
+				<img class="cuestionFoto" src="../../../media/img/cuestionario_imagenes/losSoprano.png">
+				<select class="cuestionInputs" id="losSoprano">
+					<option value="0">
+						Christopher Moltisanti
+					</option>
+					<option value="1">
+						Tony Soprano
+					</option>
+					<option value="0">
+						Paulie Gualtieri
+					</option>
+					<option value="0">
+						Silvio Dante
+					</option>
+				</select>
+			</div>
+			<div id="botones">
+				<input type="reset" value="Borrar" id="espacio">
+				<input type="button" value="Ver resultado" onclick="registar()"><br>
+			</div>
+			</form>
+			<div id="resultadoCuestionario"></div>
+		</div>
 		
 		<footer>
 			<h3>Ramona News</h3>
-			<img src="../../../media/img/redesSociales.png" onclick="socialMedia()">
+			<img id="socialMedia" src="../../../media/img/redesSociales.png" onclick="socialMedia()">
 			<table>
 				<tr>
 					<th><a href="../peliculas.html">Películas</a></th>
@@ -36,7 +273,7 @@
 				<tr>
 					<td><a href="frasesPeli.html">Frases Famosas de Películas</a></td>
 					<td><a href="cuestionarioSeries.html">Cuestionario de Series</a></td>
-					<td>Quizzes de Animes</td>
+					<td onclick="proceso()">Quizzes de Animes</td>
 				</tr>
 			</table>
 		</footer>
