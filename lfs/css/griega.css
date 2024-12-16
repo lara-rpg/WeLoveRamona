@@ -105,6 +105,15 @@ nav{
 	
 }
 
+.flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
 .delante{
 	width:100%;
 	height:100%;
@@ -117,6 +126,19 @@ nav{
 	height:100%;
 	object-fit:cover;
 	background-image: url("../img/red.jpg");
+}
+
+.delante, .detras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.detras{
+	background-color:#f2eede;
+	transform: rotateY(180deg);
+	border-radius: 25px;
 }
 
 /*FIN CARTAS*/
