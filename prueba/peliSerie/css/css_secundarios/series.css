@@ -1,0 +1,212 @@
+@font-face{
+	font-family: "letrasPeriodico";
+    src: url("../../css/letras/oldnewspapertypes/OldNewspaperTypes.ttf");
+}
+
+body{
+	background-color: #e3ddc5;
+	text-align: center;
+}
+
+header{
+	font-family: letrasPeriodico, sans-serif;
+	border-bottom: 3px solid black;
+	font-size: 1.3em;
+	background-color: #000000;
+    color: #ffffff;
+}
+
+h1{
+	display: inline-block;
+}
+
+.cabecera{
+	height: 5vh;
+	width: 5vw;
+}
+
+h1 a, 
+h1 a:visited {
+    color: #ffffff;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+nav.fixedNav {
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
+    padding: 0.5em 0; 
+}
+
+nav.fixedNav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav .menu-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 99%; 
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-between; 
+    flex-grow: 1; 
+    text-align: center;
+}
+
+nav .links a {
+    flex-grow: 1; 
+    text-align: center; 
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8em 0; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+	font-size: 1.25em;
+}
+
+nav .links a:hover {
+    background-color: #c7920e;
+    color: #ffffff; 
+}
+
+#contenedorTitulo{
+	text-align: center;
+}
+
+#titulo{
+	font-family: "letrasPeriodico";
+	font-size: 3em;
+}
+	
+.section{
+	font-size: 1.5em;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.imagenPelicula{
+	width: 31.5vw;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+}
+
+.articulo{
+	width: 31.5vw;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+}
+
+.plataforma{
+	font-size: 2.5em;
+	border: 3px dashed black;
+}
+
+.tituloPelicula{
+	font-size: 1.5em;
+}
+
+.contenerdorConMargenes{
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+footer {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 5vh 3vw; 
+    font-family: Arial, sans-serif;
+    font-size: 1em; 
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.8em; 
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+footer table {
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    width: 81vw; 
+}
+
+footer th {
+    font-size: 1.2em; 
+    font-weight: bold;
+    padding: 1vh 0.5vw;
+    text-align: center; 
+    color: #ffffff; 
+    border-bottom: 0.2vh solid #555555;
+	width: 27vw;
+}
+
+footer th:hover, 
+footer th a:hover {
+     background-color: #222222; 
+    color: #ffffff; 
+}
+
+footer td {
+    font-size: 1em;
+    padding: 1vh 0.5vw;
+    text-align: center; 
+    color: #ccc; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+	width: 27vw;
+}
+
+footer td a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer td:hover, 
+footer td a:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+footer td:empty {
+    display: none;
+}
+
+footer th a, 
+footer th a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer th:hover, 
+footer th a:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+footer a, 
+footer a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+ 
+footer a:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+#socialMedia{
+	cursor: pointer;
+}
