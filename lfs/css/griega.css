@@ -184,12 +184,12 @@ main{
 }
 
 .detras h4{
-	font-size:3em;
+	font-size:2em;
 	font-family: GREEK;
 }
 
 .detras p{
-	font-size:1em;
+	font-size:.85em;
 	padding: 0vh 1.5vw;
 	text-align: justify;
 	font-family: GREEK;
